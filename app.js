@@ -1,13 +1,14 @@
 var express = require('express');
 var app = express();
 
-var serveStatic = require('serve-static')
+var serveStatic = require('serve-static');
 var fs = require('fs');
 var bodyParser = require('body-parser');
 var multer = require('multer');
 var mongoose = require('mongoose');
 var gm = require('gm');
 var cors = require('cors');
+var compression = require('compression');
 
 // connessione a mongo
 mongoose.connect('mongodb://localhost:27017/jbm');
@@ -19,6 +20,7 @@ db.once('open', function() {
 
 var serve = serveStatic('./public');
 // Middelwere
+app.use(compression());
 app.use(serve);
 app.use(cors());
 app.use(bodyParser.json());

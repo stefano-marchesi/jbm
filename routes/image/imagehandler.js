@@ -20,7 +20,7 @@ var header = {
   large:{long:1000, short:500}
 };
 
-var destfolder='./../APP/public/images';
+var destfolder='./public/images';
 
 
 var resize = function(path, endPath, endL, endA) {
@@ -37,7 +37,7 @@ var resize = function(path, endPath, endL, endA) {
 
 exports.add = function() {
   return multer({
-    dest: './upload/',
+    dest: './images/upload/',
 
 
     onParseEnd: function(request, next) {
@@ -105,7 +105,7 @@ exports.remove = function(toRemove, cb) {
       response.status(400).send('Bad Request: ' + err);
     } else {
 
-      fs.unlinkSync('./upload/' + data.nome);
+      fs.unlinkSync('./images/upload/' + data.nome);
 
       switch (data.tipo) {
         case 'copertina':
