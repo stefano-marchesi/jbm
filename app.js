@@ -52,6 +52,6 @@ app.use('/api/post', post);
 
 
 // Server
-app.listen(8654, function() {
-  console.log('listening to port 8654');
+app.listen(80, function() {
+  console.log('listening to port 80');
 });
