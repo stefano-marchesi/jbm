@@ -1,0 +1,22 @@
+{
+  "name": "jbm",
+  "version": "1.0.0",
+  "description": "blog di Jessica Mura",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stefano Marchesi",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.10.1",
+    "event-stream": "^3.2.1",
+    "mongoose": "^3.8.21",
+    "multer": "^0.1.7"
+  },
+  "dependencies": {
+    "cors": "^2.5.3",
+    "gm": "^1.17.0",
+    "lodash": "^3.1.0"
+  }
+}
