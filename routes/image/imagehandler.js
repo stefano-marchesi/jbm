@@ -26,6 +26,7 @@ var destfolder='./public/images';
 var resize = function(path, endPath, endL, endA) {
 
   gm(path)
+  .options({imageMagick: true})
     .resize(endL, endA, '^')
     .gravity('Center')
     .crop(endL, endA)
