@@ -9,6 +9,7 @@ var post = postModel.post;
 router.route("/")
 
   .get(function(request, response) {
+    console.log('informazione aggiunta');
     post.find(function(err, data) {
       if (err) {
         response.status(400).send('Bad Request: '+ err);
