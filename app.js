@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 
+var serveStatic = require('serve-static')
 var fs = require('fs');
 var bodyParser = require('body-parser');
 var multer = require('multer');
