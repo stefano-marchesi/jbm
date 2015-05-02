@@ -37,7 +37,7 @@ var resize = function(path, endPath, endL, endA) {
 
 exports.add = function() {
   return multer({
-    dest: './images/upload/',
+    dest: './public/images/upload/',
 
 
     onParseEnd: function(request, next) {
@@ -105,7 +105,7 @@ exports.remove = function(toRemove, cb) {
       response.status(400).send('Bad Request: ' + err);
     } else {
 
-      fs.unlinkSync('./images/upload/' + data.nome);
+      fs.unlinkSync('./public/images/upload/' + data.nome);
 
       switch (data.tipo) {
         case 'copertina':
