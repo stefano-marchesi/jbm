@@ -16,7 +16,7 @@ db.once('open', function() {
   console.log('connesso a mongo');
 });
 
-
+var serve = serveStatic('public')
 // Middelwere
 app.use(cors());
 app.use(bodyParser.json());
