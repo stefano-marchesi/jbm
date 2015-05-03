@@ -99,6 +99,16 @@ exports.add = function() {
   });
 };
 
+var removeImg = function(imgPath){
+  fs.exists(imgPath, function(exists) {
+  if (exists) {
+    fs.unlinkSync(imgPath);
+  } else {
+
+  }
+});
+};
+
 exports.remove = function(toRemove, cb) {
 
   image.findById(toRemove, function(err, data) {
@@ -110,9 +120,10 @@ exports.remove = function(toRemove, cb) {
 
       switch (data.tipo) {
         case 'copertina':
+        removeImg(destfolder +'/copertina/' + data.nome);
+        removeImg(destfolder +'/copertina/thumb/' + data.nome);
 
-          fs.unlinkSync(destfolder +'/copertina/' + data.nome);
-          fs.unlinkSync(destfolder +'/copertina/thumb/' + data.nome);
+    
           cb();
 
           break;
