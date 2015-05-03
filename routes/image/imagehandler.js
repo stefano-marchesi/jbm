@@ -116,7 +116,7 @@ exports.remove = function(toRemove, cb) {
       response.status(400).send('Bad Request: ' + err);
     } else {
 
-      fs.unlinkSync('./public/images/upload/' + data.nome);
+      removeImg('./public/images/upload/' + data.nome);
 
       switch (data.tipo) {
         case 'copertina':
