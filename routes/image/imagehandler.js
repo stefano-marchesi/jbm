@@ -123,22 +123,22 @@ exports.remove = function(toRemove, cb) {
         removeImg(destfolder +'/copertina/' + data.nome);
         removeImg(destfolder +'/copertina/thumb/' + data.nome);
 
-    
+
           cb();
 
           break;
 
         case 'galleria':
 
-          fs.unlinkSync(destfolder +'/galleria/' + data.nome);
-          fs.unlinkSync(destfolder +'/galleria/thumb/' + data.nome);
+        removeImg(destfolder +'/galleria/' + data.nome);
+        removeImg(destfolder +'/galleria/thumb/' + data.nome);
           cb();
 
           break;
 
         case 'header':
 
-          fs.unlinkSync(destfolder +'/header/' + data.nome);
+        removeImg(destfolder +'/header/' + data.nome);
           cb();
 
           break;
