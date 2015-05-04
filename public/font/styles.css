@@ -50,6 +50,24 @@
 .icon-instagrem:before {
   content: "d";
 }
-.icon-list-unordered:before {
+.icon-cross:before {
+  content: "f";
+}
+.icon-triangle-left:before {
+  content: "i";
+}
+.icon-triangle-right:before {
+  content: "j";
+}
+.icon-three-bars:before {
   content: "e";
+}
+.icon-trashcan:before {
+  content: "g";
+}
+.icon-pencil:before {
+  content: "h";
+}
+.icon-disc-floppy-font:before {
+  content: "k";
 }

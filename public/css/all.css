@@ -1,8 +1,9 @@
 .main-menu-container{background-color:#000;padding:9px}
 .main-menu-item{margin:5px}
+.contact-container{padding:10%}
 .tile-image-container img{max-width:100%}
 .article-list,.article-list-item{margin:1em}
-.article-tag{margin:5px}
+.article-tag{margin:3px}
 .article-content{padding:1em}
 .article-content h3{margin-bottom:9px}
 .outfit{text-align:center}
@@ -17,7 +18,7 @@
 .page-slide{padding-left:10px;padding-right:10px}
 .page-slide img{max-height:400px}
 .botton-tag{font-family:Quicksand,sans-serif}
-.botton-tag-container{margin:4px}
+.botton-tag-container{margin:2px}
 md-select{margin-bottom:20px}
 .tile-image-container{width:100%;position:relative}
 .tile-title{margin-top:0;margin-bottom:0}
