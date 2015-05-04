@@ -1,5 +1,7 @@
 .main-menu-container{background-color:#000;padding:9px}
 .main-menu-item{margin:5px}
+.logo-container{position:relative}
+.logo{position:absolute;top:-32px;left:-83px}
 .contact-container{padding:10%}
 .tile-image-container img{max-width:100%}
 .article-list,.article-list-item{margin:1em}
@@ -15,6 +17,8 @@
 .domanda{background-color:#00e5e5;margin-bottom:10px;margin-right:20%;border-radius:10px;padding:2%}
 .risposta{background-color:#a4fb00;margin-left:20%;text-align:right;border-radius:10px;padding:2%}
 .rubrica-page{padding:10px;margin-bottom:10px}
+.rubrica-page .separator-container{margin-bottom:15px}
+.rubrica-page .separator{width:100%;max-width:500px}
 .page-slide{padding-left:10px;padding-right:10px}
 .page-slide img{max-height:400px}
 .botton-tag{font-family:Quicksand,sans-serif}
