@@ -11,6 +11,8 @@
 .article-tag{margin:3px}
 .article-content{padding:1em}
 .article-content h3{margin-bottom:9px}
+.article-list .separator-container{margin-bottom:15px;padding-left:20%;padding-right:20%}
+.article-list .separator-container .separator{width:100%}
 .outfit{text-align:center}
 .outfit .separator-container{margin-bottom:15px;padding-left:20%;padding-right:20%}
 .outfit .separator-container .separator{width:100%}
