@@ -53,6 +53,9 @@ app.use('/api/image', image);
 var post = require('./routes/post/route.js');
 app.use('/api/post', post);
 
+var sponsor = require('./routes/sponsor/route.js');
+app.use('/api/sponsor', sponsor);
+
 
 
 // Server

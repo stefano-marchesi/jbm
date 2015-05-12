@@ -11,6 +11,8 @@ var slider = sliderModel.slider;
 var postModel = require('./../post/model.js');
 var post = postModel.post;
 
+var sponsorModel = require('./../sponsor/model.js');
+var sponsor = sponsorModel.sponsor;
 
 router.route("/")
 
@@ -25,10 +27,15 @@ router.route("/")
       slider.find(function(err, data) {
         if (err) {response.status(400).send('Bad Request: '+ err);} else {cache.slider=data;}
 
-        post.find(function(err, data) {
+        post.find({attivo:true},function(err, data) {
           if (err) {response.status(400).send('Bad Request: '+ err);} else {cache.post=data;}
 
+          sponsor.find({attivo:true},function(err, data) {
+            if (err) {response.status(400).send('Bad Request: '+ err);} else {cache.sponsor=data;}
+
         response.json(cache);
+
+          });
 
         });
       });
