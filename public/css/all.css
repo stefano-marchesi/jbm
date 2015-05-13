@@ -7,6 +7,7 @@
 .logo-container{position:relative}
 .logo{position:absolute;top:-32px;left:-83px}
 .section{padding:1%}
+.tag-cloud{background-color:#000}
 .contact-container{padding:10%}
 .tile-image-container img{max-width:100%}
 .ownlike{color:red}
@@ -41,6 +42,7 @@
 .sponsordisplay img{width:100%}
 .botton-tag{font-family:Quicksand,sans-serif}
 .botton-tag-container{margin:2px}
+.tag-label{color:#fff;margin-bottom:5px;margin-top:9px}
 md-select{margin-bottom:20px}
 .tile-image-container{width:100%;position:relative}
 .tile-title{margin-top:0;margin-bottom:0}
