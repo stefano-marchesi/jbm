@@ -12,7 +12,7 @@
 .ownlike{color:red}
 .ownlikes{border-style:dotted;padding:6px;margin-left:10px}
 .social-bottom{margin:1%}
-.outfit{text-align:center}
+.outfit{text-align:center;max-width:100%}
 .outfit .separator-container{margin-bottom:15px;padding-left:20%;padding-right:20%}
 .outfit .separator-container .separator{width:100%}
 .article-single{margin:1em;padding:1em}
@@ -35,6 +35,7 @@
 .rubrica-page .separator-container .separator{width:100%}
 .page-slide{padding-left:10px;padding-right:10px}
 .page-slide img{max-height:400px}
+.page-slider{max-width:100%}
 .sponsordisplay{padding:10px}
 .sponsordisplay img{width:100%}
 .botton-tag{font-family:Quicksand,sans-serif}
