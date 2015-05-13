@@ -12,7 +12,7 @@
 .tile-image-container img{max-width:100%}
 .ownlike{color:red}
 .ownlikes{border-style:dotted;padding:6px;margin-left:10px}
-.social-bottom{margin:1%}
+.social-bottom{margin:1% 1% 1% 10px}
 .outfit{text-align:center;max-width:100%}
 .outfit .separator-container{margin-bottom:15px;padding-left:20%;padding-right:20%}
 .outfit .separator-container .separator{width:100%}
@@ -20,7 +20,7 @@
 .article-single h3{font-size:250%;color:#000;margin-bottom:9px;border-bottom-style:solid;border-bottom-width:2px;border-bottom-color:rgba(0,0,0,.54)}
 .article-single p{white-space:pre-wrap;text-indent:50px}
 .article-single-content{padding-right:10px}
-.copertina-display{width:auto;margin-top:20px}
+.copertina-display{width:auto;margin:20px}
 .article-image-container img{width:100%;height:auto}
 .article-list-item{margin:1em}
 .article-tag{margin:3px}
