@@ -44,9 +44,6 @@
 .icon-pinterest:before {
   content: "c";
 }
-.icon-twitter-square:before {
-  content: "b";
-}
 .icon-instagrem:before {
   content: "d";
 }
@@ -76,4 +73,37 @@
 }
 .icon-heart:before {
   content: "m";
+}
+.icon-error-two:before {
+  content: "n";
+}
+.icon-chevron-right:before {
+  content: "o";
+}
+.icon-chevron-left:before {
+  content: "p";
+}
+.icon-googleplus:before {
+  content: "q";
+}
+.icon-facebook:before {
+  content: "r";
+}
+.icon-instagram:before {
+  content: "s";
+}
+.icon-like:before {
+  content: "t";
+}
+.icon-social-twitter:before {
+  content: "v";
+}
+.icon-google-plus:before {
+  content: "x";
+}
+.icon-youtube:before {
+  content: "y";
+}
+.icon-twitter:before {
+  content: "u";
 }
