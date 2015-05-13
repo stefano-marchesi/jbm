@@ -51,7 +51,7 @@ md-select{margin-bottom:20px}
 .tile-footer-per h3,.tile-footer-per p{margin-top:0;margin-bottom:0}
 .tile a:link,.tile a:visited{color:rgba(0,0,0,.54)}
 main-menu{margin-bottom:100px}
-h3{font-family:Quicksand,sans-serif;color:rgba(0,0,0,.54);border-bottom-style:solid;border-bottom-width:2px;border-bottom-color:rgba(0,0,0,.54)}
+h3{font-family:Quicksand,sans-serif;color:#000;border-bottom-style:solid;border-bottom-width:2px;border-bottom-color:rgba(0,0,0,.54)}
 p{font-family:'Sorts Mill Goudy',serif}
 .icon{font-size:150%}
 /*!
