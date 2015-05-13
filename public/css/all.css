@@ -17,7 +17,7 @@
 .outfit .separator-container{margin-bottom:15px;padding-left:20%;padding-right:20%}
 .outfit .separator-container .separator{width:100%}
 .article-single{margin:1em;padding:1em}
-.article-single h3{color:rgba(0,0,0,.54);margin-bottom:9px;border-bottom-style:solid;border-bottom-width:2px;border-bottom-color:rgba(0,0,0,.54)}
+.article-single h3{font-size:250%;color:rgba(0,0,0,.54);margin-bottom:9px;border-bottom-style:solid;border-bottom-width:2px;border-bottom-color:rgba(0,0,0,.54)}
 .article-single p{white-space:pre-wrap;text-indent:50px}
 .article-single-content{padding-right:10px}
 .copertina-display{width:auto}
