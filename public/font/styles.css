@@ -71,3 +71,9 @@
 .icon-disc-floppy-font:before {
   content: "k";
 }
+.icon-heart-empty:before {
+  content: "l";
+}
+.icon-heart:before {
+  content: "m";
+}

@@ -1,3 +1,7 @@
+.hiding-menu{padding:10px}
+.hiding-menu .separator-container{margin-top:15px}
+.hiding-menu .separator-container .separator{width:100%}
+.hiding-menu-bc{margin-top:30px}
 .main-menu-container{background-color:#000;padding:9px}
 .main-menu-item{margin:5px}
 .logo-container{position:relative}
@@ -5,6 +9,8 @@
 .section{padding:1%}
 .contact-container{padding:10%}
 .tile-image-container img{max-width:100%}
+.ownlike{color:red}
+.ownlikes{border-style:dotted;padding:6px;margin-left:10px}
 .social-bottom{margin:1%}
 .outfit{text-align:center}
 .outfit .separator-container{margin-bottom:15px;padding-left:20%;padding-right:20%}
