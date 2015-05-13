@@ -10,7 +10,12 @@ var postSkema = mongoose.Schema({
   copertina: { nome: String, orientation: String },
   galleria: [{ nome: String, orientation: String }],
   tags: [String],
-  attivo: { type: Boolean, default: false }
+  attivo: { type: Boolean, default: false },
+  contatori: {
+    cuori: { type: Number, default: 0 },
+    twitter: { type: Number, default: 0 },
+    facebook:  { type: Number, default: 0 }
+  }
 
 
 

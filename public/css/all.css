@@ -6,13 +6,6 @@
 .contact-container{padding:10%}
 .tile-image-container img{max-width:100%}
 .social-bottom{margin:1%}
-.article-image-container img{width:100%;height:auto}
-.article-list-item{margin:1em}
-.article-tag{margin:3px}
-.article-content{padding:1em}
-.article-content h3{margin-bottom:9px}
-.article-list .separator-container{margin-bottom:15px;padding-left:20%;padding-right:20%}
-.article-list .separator-container .separator{width:100%}
 .outfit{text-align:center}
 .outfit .separator-container{margin-bottom:15px;padding-left:20%;padding-right:20%}
 .outfit .separator-container .separator{width:100%}
@@ -21,6 +14,13 @@
 .article-single p{white-space:pre-wrap;text-indent:50px}
 .article-single-content{padding-right:10px}
 .copertina-display{width:auto}
+.article-image-container img{width:100%;height:auto}
+.article-list-item{margin:1em}
+.article-tag{margin:3px}
+.article-content{padding:1em}
+.article-content h3{margin-bottom:9px}
+.article-list .separator-container{margin-bottom:15px;padding-left:20%;padding-right:20%}
+.article-list .separator-container .separator{width:100%}
 .rubrica-item{padding:10px;margin-top:10px}
 .domanda{background-color:#00e5e5;margin-bottom:10px;margin-right:20%;border-radius:10px;padding:2%}
 .risposta{background-color:#a4fb00;margin-left:20%;text-align:right;border-radius:10px;padding:2%}

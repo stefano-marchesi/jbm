@@ -30,8 +30,25 @@ router.route("/")
     });
   });
 
-router.route("/:id")
 
+  router.route("/addtocounter/:id/:tipo")
+
+    .get(function(request, response) {
+      console.log('contatore chiamato per id: ' +request.params.id + ' tipo: '+ request.params.tipo);
+
+      post.findById(request.params.id, function (err, doc) {
+
+  doc.contatori[request.params.tipo] +=1;
+  doc.save(function(){
+    response.status(200).send('oook');
+  });
+});
+
+
+    });
+
+
+router.route("/:id")
   .get(function(request, response) {
     post.findById(request.params.id, function(err, data) {
       if (err) {
