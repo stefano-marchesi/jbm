@@ -1,6 +1,7 @@
 var express = require("express");
 var router = express.Router();
 var mongoose = require("mongoose");
+var auth = require('./../auth.js');
 
 var postModel = require('./model.js');
 var post = postModel.post;
@@ -8,7 +9,7 @@ var post = postModel.post;
 
 router.route("/")
 
-  .get(function(request, response) {
+  .get(auth.all(), function(request, response) {
     console.log('informazione aggiunta');
     post.find(function(err, data) {
       if (err) {
@@ -19,7 +20,7 @@ router.route("/")
     });
   })
 
-  .post(function(request, response) {
+  .post(auth.amministratore(), function(request, response) {
     var newpost = new post(request.body);
     newpost.save(function(err, data) {
       if (err) {
@@ -33,7 +34,7 @@ router.route("/")
 
   router.route("/addtocounter/:id/:tipo")
 
-    .get(function(request, response) {
+    .get(auth.all(), function(request, response) {
       console.log('contatore chiamato per id: ' +request.params.id + ' tipo: '+ request.params.tipo);
 
       post.findById(request.params.id, function (err, doc) {
@@ -49,7 +50,7 @@ router.route("/")
 
 
 router.route("/:id")
-  .get(function(request, response) {
+  .get(auth.all(), function(request, response) {
     post.findById(request.params.id, function(err, data) {
       if (err) {
         response.status(400).send('Bad Request: '+ err);
@@ -59,7 +60,7 @@ router.route("/:id")
     });
   })
 
-  .put(function(request, response) {
+  .put(auth.amministratore(), function(request, response) {
     post.findByIdAndUpdate(request.params.id, request.body, function(err, data) {
       if (err) {
         response.status(400).send('Bad Request: '+ err);
@@ -69,7 +70,7 @@ router.route("/:id")
     });
   })
 
-  .delete(function(request, response) {
+  .delete(auth.amministratore(), function(request, response) {
     post.findByIdAndRemove(request.params.id, function(err, data) {
       if (err) {
         response.status(400).send('Bad Request: '+ err);

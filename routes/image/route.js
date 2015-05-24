@@ -2,6 +2,7 @@ var express = require("express");
 var router = express.Router();
 var multer = require("multer");
 var gm = require("gm");
+var auth = require('./../auth.js');
 
 var mongoose = require("mongoose");
 var imageModel = require('./model.js');

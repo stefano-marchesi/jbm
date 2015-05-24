@@ -1,6 +1,7 @@
 var express = require("express");
 var router = express.Router();
 var mongoose = require("mongoose");
+var auth = require('./../auth.js');
 
 var tagsModel = require('./../tags/model.js');
 var tags = tagsModel.tags;
@@ -17,7 +18,7 @@ var sponsor = sponsorModel.sponsor;
 router.route("/")
 
 
-  .get(function(request, response) {
+  .get(auth.all(), function(request, response) {
 
     var cache = {};
 
@@ -41,6 +42,13 @@ router.route("/")
       });
     });
 
+
+  });
+
+router.route("/auth")
+  .get(auth.amministratore(), function(request, response) {
+    console.log(request.headers);
+    response.send('ok');
 
   });
 

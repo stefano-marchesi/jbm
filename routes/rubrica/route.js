@@ -1,6 +1,7 @@
 var express = require("express");
 var router = express.Router();
 var mongoose = require("mongoose");
+var auth = require('./../auth.js');
 
 var rubricaModel = require('./model.js');
 var rubrica = rubricaModel.rubrica;
@@ -8,7 +9,7 @@ var rubrica = rubricaModel.rubrica;
 
 router.route("/")
 
-.get(function(request, response) {
+.get(auth.all(), function(request, response) {
   rubrica.find(function(err, data) {
     if (err) {
       response.status(400).send('Bad Request: ' + err);
@@ -20,7 +21,7 @@ router.route("/")
 })
 
 
-.post(function(request, response) {
+.post(auth.all(), function(request, response) {
   var newrubrica = new rubrica(request.body);
   newrubrica.save(function(err, data) {
     if (err) {
@@ -32,7 +33,7 @@ router.route("/")
 });
 
 router.route("/unconfirmed")
-.get(function(request, response) {
+.get(auth.amministratore(), function(request, response) {
   console.log('rubricai speciali richiesti');
   rubrica.find({
     approvato: false
@@ -47,7 +48,7 @@ router.route("/unconfirmed")
 router.route("/:id")
 
 
-.get(function(request, response) {
+.get(auth.amministratore(), function(request, response) {
   rubrica.find({
     rif: request.params.id
     })
@@ -60,7 +61,7 @@ router.route("/:id")
     });
 })
 
-.put(function(request, response) {
+.put(auth.amministratore(), function(request, response) {
   rubrica.findByIdAndUpdate(request.params.id, request.body, function(err, data) {
     if (err) {
       response.status(400).send('Bad Request: ' + err);
@@ -70,7 +71,7 @@ router.route("/:id")
   });
 })
 
-.delete(function(request, response) {
+.delete(auth.amministratore(), function(request, response) {
   rubrica.findByIdAndRemove(request.params.id, function(err, data) {
     if (err) {
       response.status(400).send('Bad Request: ' + err);
