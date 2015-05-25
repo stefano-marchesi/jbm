@@ -7,7 +7,11 @@ var imageSkema = mongoose.Schema({
   testo: String,
   rif: String,
   tipo: String,
-  orientation: String
+  orientation: String,
+  attivo: { type: Boolean, default: false },
+  contatori: {
+    cuori: { type: Number, default: 0 }
+  }
 
 });
 exports.image = mongoose.model("image", imageSkema);

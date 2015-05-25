@@ -8,6 +8,7 @@
 .logo{position:absolute;top:-32px;left:-83px}
 .section{padding:1%}
 .tag-cloud{background-color:#000}
+.main-content-area{max-width:100%}
 .contact-container{padding:10%}
 .tile-image-container img{max-width:100%}
 .ownlike{color:red}
@@ -39,7 +40,7 @@
 .rubrica-page{padding:10px;margin-bottom:10px}
 .rubrica-page .separator-container{margin-bottom:15px;padding-left:20%;padding-right:20%}
 .rubrica-page .separator-container .separator{width:100%}
-.page-slide{padding-left:10px;padding-right:10px}
+.page-slide{padding-left:10px;padding-right:10px;max-width:100%}
 .page-slide img{max-height:400px}
 .page-slider{max-width:100%}
 .slider-control{margin:5px}

@@ -13,16 +13,14 @@ var imagehandler = require('./imagehandler.js');
 router.route("/")
 
 .get(function(request, response) {
-  image.find(function(err, data) {
+  image.find({tipo: 'galleria'}, function(err, data) {
     if (err) {
       response.status(400).send('Bad Request: ' + err);
     } else {
       response.json(data);
     }
   });
-
 })
-
 
 .post(imagehandler.add(), function(request, response) {
 
@@ -93,6 +91,17 @@ router.route("/:id")
 
 });
 
+router.route("/active")
+
+.get(function(request, response) {
+  image.find({attivo: 'true'}, function(err, data) {
+    if (err) {
+      response.status(400).send('Bad Request: ' + err);
+    } else {
+      response.json(data);
+    }
+  });
+});
 
 
 
