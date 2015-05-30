@@ -13,7 +13,7 @@ var imagehandler = require('./imagehandler.js');
 router.route("/")
 
 .get(function(request, response) {
-  image.find({tipo: 'galleria'}, function(err, data) {
+  image.find({tipo: 'galleria', rif : null}, function(err, data) {
     if (err) {
       response.status(400).send('Bad Request: ' + err);
     } else {
