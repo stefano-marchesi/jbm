@@ -49,6 +49,18 @@ router.route("/")
 });
 
 
+router.route("/active")
+
+.get(function(request, response) {
+  image.find({'attivo': true}, function(err, data) {
+    if (err) {
+      response.status(400).send('Bad Request: ' + err);
+    } else {
+      response.json(data);
+    }
+  });
+});
+
 router.route("/:id")
 
 
@@ -89,18 +101,6 @@ router.route("/:id")
 
       });
 
-});
-
-router.route("/active")
-
-.get(function(request, response) {
-  image.find({attivo: 'true'}, function(err, data) {
-    if (err) {
-      response.status(400).send('Bad Request: ' + err);
-    } else {
-      response.json(data);
-    }
-  });
 });
 
 
