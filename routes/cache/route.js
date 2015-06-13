@@ -18,32 +18,34 @@ var sponsor = sponsorModel.sponsor;
 router.route("/")
 
 
-  .get(auth.all(), function(request, response) {
+.get(auth.all(), function(request, response) {
 
-    var cache = {};
+  var cache = {};
 
-    tags.find(function(err, data) {
-      if (err) {response.status(400).send('Bad Request: '+ err);} else {cache.tags=data;}
+  tags.find().exec(function(err, dataTag) {
+    cache.tags = dataTag;
 
-      slider.find(function(err, data) {
-        if (err) {response.status(400).send('Bad Request: '+ err);} else {cache.slider=data;}
+    slider.find().exec(function(err, dataslider) {
+      cache.slider = dataslider;
 
-        post.find({attivo:true},function(err, data) {
-          if (err) {response.status(400).send('Bad Request: '+ err);} else {cache.post=data;}
+      post.find({
+        attivo: true
+      }).sort({'date': -1}).exec(function(err, datapost) {
+        cache.post = datapost;
 
-          sponsor.find({attivo:true},function(err, data) {
-            if (err) {response.status(400).send('Bad Request: '+ err);} else {cache.sponsor=data;}
+        sponsor.find({attivo: true}).exec(function(err,datasponsor) {
+        cache.sponsor=datasponsor;
 
-        response.json(cache);
-
-          });
+          response.json(cache);
 
         });
+
       });
     });
-
-
   });
+
+
+});
 
 router.route("/auth")
   .get(auth.amministratore(), function(request, response) {
@@ -52,4 +54,21 @@ router.route("/auth")
 
   });
 
+
+
 module.exports = router;
+
+/*
+
+posts.find({'creator.user_id': req.params.user_id}).sort({'_id': -1}).exec(function(err,userpost) {
+    if(err)
+        res.send(err);
+    res.json(userpost);
+});
+
+sponsor.find({attivo: true}).exec(function(err,data) {
+cache.sponsor=post;
+});
+
+
+*/

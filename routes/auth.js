@@ -9,10 +9,10 @@ exports.amministratore = function (){
     console.log(request.headers);
 
     if (request.headers.magicword === keyring['amministratore']) {
-      console.log('corretto');
+
       next();
     } else {
-      console.log('sbagliato');
+
       response.status(401).end();
 
     }
@@ -27,10 +27,10 @@ exports.all = function (){
     console.log(request.headers.magicword);
 
     if (request.headers.magicword === keyring['general'] || request.headers.magicword === keyring['amministratore']) {
-      console.log('corretto');
+
       next();
     } else {
-      console.log('sbagliato');
+
       response.status(401).end();
 
     }

@@ -10,7 +10,7 @@ var post = postModel.post;
 router.route("/")
 
   .get(auth.all(), function(request, response) {
-    console.log('informazione aggiunta');
+
     post.find(function(err, data) {
       if (err) {
         response.status(400).send('Bad Request: '+ err);
@@ -35,7 +35,7 @@ router.route("/")
   router.route("/addtocounter/:id/:tipo")
 
     .get(auth.all(), function(request, response) {
-      console.log('contatore chiamato per id: ' +request.params.id + ' tipo: '+ request.params.tipo);
+
 
       post.findById(request.params.id, function (err, doc) {
 

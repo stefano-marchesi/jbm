@@ -9,6 +9,9 @@ var mongoose = require('mongoose');
 var gm = require('gm');
 var cors = require('cors');
 var compression = require('compression');
+// var htmlSnapshots = require('html-snapshots');
+var sitemap = require('./sitemap.js');
+
 
 // connessione a mongo
 mongoose.connect('mongodb://localhost:27017/jbm');
@@ -27,6 +30,18 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended: true
 }));
+
+sitemap.update();
+
+/*
+var result = htmlSnapshots.run({
+  input: "sitemap",
+  source: "./public/sitemap.xml",
+  outputDir: "./public/snapshots",
+  outputDirClean: true
+});
+
+*/
 
 // Routes
 var cache = require('./routes/cache/route.js');
