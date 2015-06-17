@@ -29,6 +29,8 @@ var fixedPages = [{
   url: '/press'
 }];
 
+// var realhost='localhost';
+var realhost='www.jessicamura.com';
 
 
 
@@ -42,12 +44,12 @@ exports.update = function() {
       _(data).forEach(function(n) {
         fixedPages.push({
           url: '/post/'+n._id,
-          img : 'http://localhost/images/copertina/'+n.copertina.nome
+          img : 'http://'+realhost+'/images/copertina/'+n.copertina.nome
         });
       }).value();
 
       var sitemap = sm.createSitemap({
-          hostname: 'http://localhost/#!',
+          hostname: 'http://'+realhost+'/#!',
           cacheTime: 600000,  //600 sec (10 min) cache purge period
           urls: fixedPages
       });
