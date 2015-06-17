@@ -30,7 +30,7 @@ var fixedPages = [{
 }];
 
 // var realhost='localhost';
-var realhost='jessicamura.com';
+ var realhost='jessicamura.com';
 
 
 

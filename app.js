@@ -61,7 +61,10 @@ var result = htmlSnapshots.run({
   input: "sitemap",
   source: "./public/sitemap.xml",
   outputDir: "./public/snapshots",
-  outputDirClean: true
+  outputDirClean: true,
+  snapshotScript: {
+    script: "removeScripts"
+  }
 });
 
 
