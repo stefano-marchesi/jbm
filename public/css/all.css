@@ -1,71 +1,3 @@
-.hiding-menu{padding:10px}
-.hiding-menu .separator-container{margin-top:15px}
-.hiding-menu .separator-container .separator{width:100%}
-.hiding-menu-bc{margin-top:30px}
-.main-menu-container{background-color:#000;padding:9px}
-.main-menu-item{margin:5px}
-.logo-container{position:relative}
-.logo{position:absolute;top:-32px;left:-83px}
-.section{padding:1%}
-.tag-cloud{background-color:#000}
-.main-content-area{max-width:100%}
-.contact-container{padding:10%}
-.expanded{heigh:auto;width:100%}
-.expanded-container{overflow:scroll}
-.tile-image-container img{max-width:100%}
-.ownlike{color:red}
-.ownlikes{border-style:dotted;padding:6px;margin-left:10px}
-.social-bottom{margin:1% 1% 1% 10px}
-.article-content h3{font-size:250%;color:#000}
-.article-content img{margin-right:20px}
-.article-list a:link,.article-list a:visited{color:#000;text-decoration:none}
-.data{font-family:Lusitana,serif;padding-left:30px;padding-right:30px;padding-top:25px}
-.mese{font-size:200%}
-.giorno{font-size:300%}
-.anno{font-size:200%}
-.outfit{text-align:center;max-width:100%}
-.outfit .separator-container{margin-bottom:15px;padding-left:20%;padding-right:20%}
-.outfit .separator-container .separator{width:100%}
-.article-single{margin:1em;padding:1em}
-.article-single h3{font-size:250%;color:#000;margin-bottom:9px;border-bottom-style:solid;border-bottom-width:2px;border-bottom-color:rgba(0,0,0,.54)}
-.article-single p{white-space:pre-wrap;text-indent:50px}
-.article-single-content{padding-right:10px}
-.copertina-display{width:auto;margin:20px;max-width:100%}
-.article-image-container img{width:100%;height:auto}
-.article-list-item{margin:1em}
-.article-tag{margin:3px}
-.article-content{padding:1em}
-.article-content h3{margin-bottom:9px}
-.article-list .separator-container{margin-bottom:15px;padding-left:20%;padding-right:20%}
-.article-list .separator-container .separator{width:100%}
-.rubrica-item{padding:10px;margin-top:10px}
-.domanda{background-color:#00e5e5;margin-bottom:10px;margin-right:20%;border-radius:10px;padding:2%}
-.risposta{background-color:#a4fb00;margin-left:20%;text-align:right;border-radius:10px;padding:2%}
-.rubrica-page{padding:10px;margin-bottom:10px}
-.rubrica-page .separator-container{margin-bottom:15px;padding-left:20%;padding-right:20%}
-.rubrica-page .separator-container .separator{width:100%}
-.page-slide{padding-left:10px;padding-right:10px;max-width:100%}
-.page-slide img{max-height:400px}
-.page-slider{max-width:100%}
-.slider-control{margin:5px}
-.sponsordisplay{padding:10px}
-.sponsordisplay img{width:100%}
-.botton-tag{font-family:Quicksand,sans-serif}
-.botton-tag-container{margin:2px}
-.tag-label{color:#fff;margin-bottom:5px;margin-top:9px}
-md-select{margin-bottom:20px}
-.tile-image-container{width:100%;position:relative}
-.tile-title{margin-top:0;margin-bottom:0}
-.tile-image{width:100%;height:100%}
-.topslider{margin-left:auto;margin-right:auto;margin-bottom:0;max-width:1200px}
-.topslider img{width:100%}
-.tile-footer-per{position:absolute;bottom:0;padding:4px;background-color:#fff;width:100%}
-.tile-footer-per h3,.tile-footer-per p{margin-top:0;margin-bottom:0}
-.tile a:link,.tile a:visited{color:rgba(0,0,0,.54)}
-main-menu{margin-bottom:100px}
-h3{font-family:Lusitana,serif;color:#000;border-bottom-style:solid;border-bottom-width:2px;border-bottom-color:rgba(0,0,0,.54)}
-p{font-family:'Sorts Mill Goudy',serif}
-.icon{font-size:150%}
 /*!
  * Angular Material Design
  * https://github.com/angular/material
@@ -1348,7 +1280,7 @@ md-radio-group{border:1px dotted transparent;display:block;outline:0}
 .md-select-menu-container.md-active md-select-menu{transition:-webkit-transform all .4s cubic-bezier(.25,.8,.25,1);transition:transform all .4s cubic-bezier(.25,.8,.25,1);transition-duration:200ms}
 .md-select-menu-container.md-active md-select-menu>*{opacity:1;transition:all .3s cubic-bezier(.55,0,.55,.2);transition-duration:200ms;transition-delay:100ms}
 .md-select-menu-container.md-leave{opacity:0;transition:all .3s cubic-bezier(.55,0,.55,.2);transition-duration:250ms}
-md-select{display:inline-block;margin-top:1.4em}
+md-select{display:inline-block}
 md-select[disabled]:hover{cursor:default}
 md-select:not([disabled]):hover{cursor:pointer}
 md-select:not([disabled]):focus .md-select-label{border-bottom:2px solid;padding-bottom:7px}
@@ -1541,3 +1473,71 @@ md-tooltip.md-show{transition:all .4s cubic-bezier(.25,.8,.25,1);pointer-events:
 .md-whiteframe-z3{box-shadow:0 17px 50px rgba(0,0,0,.19)}
 .md-whiteframe-z4{box-shadow:0 16px 28px 0 rgba(0,0,0,.22)}
 .md-whiteframe-z5{box-shadow:0 27px 24px 0 rgba(0,0,0,.2)}
+.hiding-menu{padding:10px}
+.hiding-menu .separator-container{margin-top:15px}
+.hiding-menu .separator-container .separator{width:100%}
+.hiding-menu-bc{margin-top:30px}
+.main-menu-container{background-color:#000;padding:9px}
+.main-menu-item{margin:5px}
+.logo-container{position:relative}
+.logo{position:absolute;top:-32px;left:-83px}
+.section{padding:1%}
+.tag-cloud{background-color:#000}
+.main-content-area{max-width:100%}
+.contact-container{padding:10%}
+.expanded{heigh:auto;width:100%}
+.expanded-container{overflow:scroll}
+.tile-image-container img{max-width:100%}
+.ownlike{color:red}
+.ownlikes{border-style:dotted;padding:6px;margin-left:10px}
+.social-bottom{margin:1% 1% 1% 10px}
+.article-content h3{font-size:250%;color:#000}
+.article-content img{margin-right:20px}
+.article-list a:link,.article-list a:visited{color:#000;text-decoration:none}
+.data{font-family:Lusitana,serif;padding-left:30px;padding-right:30px;padding-top:25px}
+.mese{font-size:200%}
+.giorno{font-size:300%}
+.anno{font-size:200%}
+.outfit{text-align:center;max-width:100%}
+.outfit .separator-container{margin-bottom:15px;padding-left:20%;padding-right:20%}
+.outfit .separator-container .separator{width:100%}
+.article-single{margin:1em;padding:1em}
+.article-single h3{font-size:250%;color:#000;margin-bottom:9px;border-bottom-style:solid;border-bottom-width:2px;border-bottom-color:rgba(0,0,0,.54)}
+.article-single p{white-space:pre-wrap;text-indent:50px}
+.article-single-content{padding-right:10px}
+.copertina-display{width:auto;margin:20px;max-width:100%}
+.article-image-container img{width:100%;height:auto}
+.article-list-item{margin:1em}
+.article-tag{margin:3px}
+.article-content{padding:1em}
+.article-content h3{margin-bottom:9px}
+.article-list .separator-container{margin-bottom:15px;padding-left:20%;padding-right:20%}
+.article-list .separator-container .separator{width:100%}
+.rubrica-item{padding:10px;margin-top:10px}
+.domanda{background-color:#00e5e5;margin-bottom:10px;margin-right:20%;border-radius:10px;padding:2%}
+.risposta{background-color:#a4fb00;margin-left:20%;text-align:right;border-radius:10px;padding:2%}
+.rubrica-page{padding:10px;margin-bottom:10px}
+.rubrica-page .separator-container{margin-bottom:15px;padding-left:20%;padding-right:20%}
+.rubrica-page .separator-container .separator{width:100%}
+.page-slide{padding-left:10px;padding-right:10px;max-width:100%}
+.page-slide img{max-height:400px}
+.page-slider{max-width:100%}
+.slider-control{margin:5px}
+.sponsordisplay{padding:10px}
+.sponsordisplay img{width:100%}
+.botton-tag{font-family:Quicksand,sans-serif}
+.botton-tag-container{margin:2px}
+.tag-label{color:#fff;margin-bottom:5px;margin-top:9px}
+md-select{margin-top:10px;margin-bottom:20px}
+.tile-image-container{width:100%;position:relative}
+.tile-title{margin-top:0;margin-bottom:0}
+.tile-image{width:100%;height:100%}
+.topslider{margin-left:auto;margin-right:auto;margin-bottom:0;max-width:1200px}
+.topslider img{width:100%}
+.tile-footer-per{position:absolute;bottom:0;padding:4px;background-color:#fff;width:100%}
+.tile-footer-per h3,.tile-footer-per p{margin-top:0;margin-bottom:0}
+.tile a:link,.tile a:visited{color:rgba(0,0,0,.54)}
+main-menu{margin-bottom:100px}
+h3{font-family:Lusitana,serif;color:#000;margin-bottom:9px;border-bottom-style:solid;border-bottom-width:2px;border-bottom-color:rgba(0,0,0,.54)}
+p{font-family:'Sorts Mill Goudy',serif}
+.icon{font-size:150%}
