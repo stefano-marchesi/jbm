@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-<url> <loc>http://jessicamura.com/#/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>http://jessicamura.com/#/articoli</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>http://jessicamura.com/#/outfit</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>http://jessicamura.com/#/travel</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>http://jessicamura.com/#/shooting</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>http://jessicamura.com/#/rubrica</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>http://jessicamura.com/#/galleria</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>http://jessicamura.com/#/aboutme</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>http://jessicamura.com/#/contact</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>http://jessicamura.com/#/press</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>http://jessicamura.com/#/post/55473b2a5e3f4954105eb82a</loc> <image:image><image:loc>http://jessicamura.com/images/copertina/364f4d3210611d00bdf311da28afb3ca.jpg</image:loc></image:image> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>http://jessicamura.com/#/post/5550e24e5e9d6fe548e356ab</loc> <image:image><image:loc>http://jessicamura.com/images/copertina/37c38e0164a8a8b8faff083f3e07183a.jpg</image:loc></image:image> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>http://jessicamura.com/#/post/5550d1e65e9d6fe548e356a5</loc> <image:image><image:loc>http://jessicamura.com/images/copertina/605aef6d2c0144883ec1b0dbf485ed60.jpg</image:loc></image:image> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://localhost/#!/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://localhost/#!/articoli</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://localhost/#!/outfit</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://localhost/#!/travel</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://localhost/#!/shooting</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://localhost/#!/rubrica</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://localhost/#!/galleria</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://localhost/#!/aboutme</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://localhost/#!/contact</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://localhost/#!/press</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://localhost/#!/post/55473b2a5e3f4954105eb82a</loc> <image:image><image:loc>http://localhost/images/copertina/364f4d3210611d00bdf311da28afb3ca.jpg</image:loc></image:image> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://localhost/#!/post/5550e24e5e9d6fe548e356ab</loc> <image:image><image:loc>http://localhost/images/copertina/37c38e0164a8a8b8faff083f3e07183a.jpg</image:loc></image:image> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://localhost/#!/post/5550d1e65e9d6fe548e356a5</loc> <image:image><image:loc>http://localhost/images/copertina/605aef6d2c0144883ec1b0dbf485ed60.jpg</image:loc></image:image> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 </urlset>

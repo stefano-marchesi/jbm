@@ -10,6 +10,8 @@
 .tag-cloud{background-color:#000}
 .main-content-area{max-width:100%}
 .contact-container{padding:10%}
+.expanded{heigh:auto;width:100%}
+.expanded-container{overflow:scroll}
 .tile-image-container img{max-width:100%}
 .ownlike{color:red}
 .ownlikes{border-style:dotted;padding:6px;margin-left:10px}
@@ -28,7 +30,7 @@
 .article-single h3{font-size:250%;color:#000;margin-bottom:9px;border-bottom-style:solid;border-bottom-width:2px;border-bottom-color:rgba(0,0,0,.54)}
 .article-single p{white-space:pre-wrap;text-indent:50px}
 .article-single-content{padding-right:10px}
-.copertina-display{width:auto;margin:20px}
+.copertina-display{width:auto;margin:20px;max-width:100%}
 .article-image-container img{width:100%;height:auto}
 .article-list-item{margin:1em}
 .article-tag{margin:3px}

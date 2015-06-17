@@ -42,12 +42,12 @@ exports.update = function() {
       _(data).forEach(function(n) {
         fixedPages.push({
           url: '/post/'+n._id,
-          img : 'http://jessicamura.com/images/copertina/'+n.copertina.nome
+          img : 'http://localhost/images/copertina/'+n.copertina.nome
         });
       }).value();
 
       var sitemap = sm.createSitemap({
-          hostname: 'http://jessicamura.com/#',
+          hostname: 'http://localhost/#!',
           cacheTime: 600000,  //600 sec (10 min) cache purge period
           urls: fixedPages
       });

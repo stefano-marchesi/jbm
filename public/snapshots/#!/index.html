@@ -29,7 +29,7 @@
 
       <top-menu hide-sm=""><div layout="row" layout-align="center center">
 
-    <!-- ngRepeat: topMenuItem in topMenuItems --><button class="md-raised md-primary md-button ng-scope md-default-theme" ng-transclude="" ng-repeat="topMenuItem in topMenuItems" ui-sref="aboutme" href="#/aboutme"><span class="ng-binding ng-scope">about me</span></button><!-- end ngRepeat: topMenuItem in topMenuItems --><button class="md-raised md-primary md-button ng-scope md-default-theme" ng-transclude="" ng-repeat="topMenuItem in topMenuItems" ui-sref="contact" href="#/contact"><span class="ng-binding ng-scope">contact</span></button><!-- end ngRepeat: topMenuItem in topMenuItems --><button class="md-raised md-primary md-button ng-scope md-default-theme" ng-transclude="" ng-repeat="topMenuItem in topMenuItems" ui-sref="press" href="#/press"><span class="ng-binding ng-scope">press</span></button><!-- end ngRepeat: topMenuItem in topMenuItems -->
+    <!-- ngRepeat: topMenuItem in topMenuItems --><button class="md-raised md-primary md-button ng-scope md-default-theme" ng-transclude="" ng-repeat="topMenuItem in topMenuItems" ui-sref="aboutme" href="#!/aboutme"><span class="ng-binding ng-scope">about me</span></button><!-- end ngRepeat: topMenuItem in topMenuItems --><button class="md-raised md-primary md-button ng-scope md-default-theme" ng-transclude="" ng-repeat="topMenuItem in topMenuItems" ui-sref="contact" href="#!/contact"><span class="ng-binding ng-scope">contact</span></button><!-- end ngRepeat: topMenuItem in topMenuItems --><button class="md-raised md-primary md-button ng-scope md-default-theme" ng-transclude="" ng-repeat="topMenuItem in topMenuItems" ui-sref="press" href="#!/press"><span class="ng-binding ng-scope">press</span></button><!-- end ngRepeat: topMenuItem in topMenuItems -->
 
 </div>
 </top-menu>
@@ -83,183 +83,68 @@
 
   <div hide-sm="" class="md-toolbar-tools" layout="row" layout-align="space-between center">
 
-    <!-- ngRepeat: mainMenuItem in mainMenuItems --><button class="md-raised md-primary md-button ng-scope md-default-theme" ng-transclude="" flex="" ng-repeat="mainMenuItem in mainMenuItems" ui-sref="home" href="#/"><span class="ng-binding ng-scope">home</span></button><!-- end ngRepeat: mainMenuItem in mainMenuItems --><button class="md-raised md-primary md-button ng-scope md-default-theme" ng-transclude="" flex="" ng-repeat="mainMenuItem in mainMenuItems" ui-sref="articoli" href="#/articoli"><span class="ng-binding ng-scope">articoli</span></button><!-- end ngRepeat: mainMenuItem in mainMenuItems --><button class="md-raised md-primary md-button ng-scope md-default-theme" ng-transclude="" flex="" ng-repeat="mainMenuItem in mainMenuItems" ui-sref="outfit" href="#/outfit"><span class="ng-binding ng-scope">outfit</span></button><!-- end ngRepeat: mainMenuItem in mainMenuItems --><button class="md-raised md-primary md-button ng-scope md-default-theme" ng-transclude="" flex="" ng-repeat="mainMenuItem in mainMenuItems" ui-sref="travel" href="#/travel"><span class="ng-binding ng-scope">travel</span></button><!-- end ngRepeat: mainMenuItem in mainMenuItems --><button class="md-raised md-primary md-button ng-scope md-default-theme" ng-transclude="" flex="" ng-repeat="mainMenuItem in mainMenuItems" ui-sref="shooting" href="#/shooting"><span class="ng-binding ng-scope">shooting</span></button><!-- end ngRepeat: mainMenuItem in mainMenuItems --><button class="md-raised md-primary md-button ng-scope md-default-theme" ng-transclude="" flex="" ng-repeat="mainMenuItem in mainMenuItems" ui-sref="rubrica" href="#/rubrica"><span class="ng-binding ng-scope">rubrica</span></button><!-- end ngRepeat: mainMenuItem in mainMenuItems --><button class="md-raised md-primary md-button ng-scope md-default-theme" ng-transclude="" flex="" ng-repeat="mainMenuItem in mainMenuItems" ui-sref="galleria" href="#/galleria"><span class="ng-binding ng-scope">galleria</span></button><!-- end ngRepeat: mainMenuItem in mainMenuItems -->
+    <!-- ngRepeat: mainMenuItem in mainMenuItems --><button class="md-raised md-primary md-button ng-scope md-default-theme" ng-transclude="" flex="" ng-repeat="mainMenuItem in mainMenuItems" ui-sref="home" href="#!/"><span class="ng-binding ng-scope">home</span></button><!-- end ngRepeat: mainMenuItem in mainMenuItems --><button class="md-raised md-primary md-button ng-scope md-default-theme" ng-transclude="" flex="" ng-repeat="mainMenuItem in mainMenuItems" ui-sref="articoli" href="#!/articoli"><span class="ng-binding ng-scope">articoli</span></button><!-- end ngRepeat: mainMenuItem in mainMenuItems --><button class="md-raised md-primary md-button ng-scope md-default-theme" ng-transclude="" flex="" ng-repeat="mainMenuItem in mainMenuItems" ui-sref="outfit" href="#!/outfit"><span class="ng-binding ng-scope">outfit</span></button><!-- end ngRepeat: mainMenuItem in mainMenuItems --><button class="md-raised md-primary md-button ng-scope md-default-theme" ng-transclude="" flex="" ng-repeat="mainMenuItem in mainMenuItems" ui-sref="travel" href="#!/travel"><span class="ng-binding ng-scope">travel</span></button><!-- end ngRepeat: mainMenuItem in mainMenuItems --><button class="md-raised md-primary md-button ng-scope md-default-theme" ng-transclude="" flex="" ng-repeat="mainMenuItem in mainMenuItems" ui-sref="shooting" href="#!/shooting"><span class="ng-binding ng-scope">shooting</span></button><!-- end ngRepeat: mainMenuItem in mainMenuItems --><button class="md-raised md-primary md-button ng-scope md-default-theme" ng-transclude="" flex="" ng-repeat="mainMenuItem in mainMenuItems" ui-sref="rubrica" href="#!/rubrica"><span class="ng-binding ng-scope">rubrica</span></button><!-- end ngRepeat: mainMenuItem in mainMenuItems --><button class="md-raised md-primary md-button ng-scope md-default-theme" ng-transclude="" flex="" ng-repeat="mainMenuItem in mainMenuItems" ui-sref="galleria" href="#!/galleria"><span class="ng-binding ng-scope">galleria</span></button><!-- end ngRepeat: mainMenuItem in mainMenuItems -->
 
   </div>
 </md-toolbar>
 </main-menu>
   <div class="section" layout="column" layout-gt-md="row">
 
-    <!-- uiView:  --><div class="main-content-area ng-scope" flex="" data-ui-view=""><div class="article-single ng-scope" layout="row" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="article-single-content" flex="" layout="column" layout-align="center center">
+    <!-- uiView:  --><div class="main-content-area ng-scope" flex="" data-ui-view=""><md-grid-list md-cols="7" md-cols-sm="6" md-row-height="1:1" md-gutter="0px" class="ng-scope ng-isolate-scope" role="list">
+  <!-- ngRepeat: post in postList --><md-grid-tile class="tile ng-scope ng-isolate-scope" ng-repeat="post in postList" md-colspan="2" md-rowspan="3" md-colspan-sm="6" md-rowspan-sm="9" role="listitem"><figure ng-transclude="">
+    <div layout-fill="" style="padding-left:18px;padding-right:18px;padding-top:27px;padding-bottom:27px;" class="ng-scope">
 
-    <h4 class="ng-binding"><meta itemprop="datePublished" content="2014-05-11T15:59:34.254Z">11/05/2014 </h4>
-    <h3 itemprop="headline" class="ng-binding">
-      rgs11111</h3>
-
-    <div layout="row" layout-warp="">
-      <!-- ngRepeat: tag in post.tags --><div class="article-tag ng-scope ng-isolate-scope" tag-botton="" rif="afae" ng-repeat="tag in post.tags"><button class="md-raised md-primary botton-tag md-button md-default-theme" ng-transclude="" style="text-transform: capitalize;" ui-sref="taglist({tagToSearch: rif})" href="#/tags/afae"><span class="ng-binding ng-scope">afae</span></button></div><!-- end ngRepeat: tag in post.tags --><div class="article-tag ng-scope ng-isolate-scope" tag-botton="" rif="areggr" ng-repeat="tag in post.tags"><button class="md-raised md-primary botton-tag md-button md-default-theme" ng-transclude="" style="text-transform: capitalize;" ui-sref="taglist({tagToSearch: rif})" href="#/tags/areggr"><span class="ng-binding ng-scope">areggr</span></button></div><!-- end ngRepeat: tag in post.tags -->
-    </div>
-
-    <div layout="column" layout-align="center center">
-      <img class="copertina-display" itemprop="image" ng-src="images/copertina/605aef6d2c0144883ec1b0dbf485ed60.jpg" src="images/copertina/605aef6d2c0144883ec1b0dbf485ed60.jpg">
-    </div>
-
-    <p itemprop="articleBody" class="ng-binding">fnhfghsrth dghjndyy s hsths t sryh s</p>
-
-
-
-
-  <share><div layout="row" layout-align="center center">
-
-<h4>condividi</h4>
-
-<div layout="row">
-  <div class="social-bottom">
-    <button class="md-fab md-raised social-bottom md-button md-default-theme" ng-transclude="" socialshare="" socialshare-provider="facebook" socialshare-text="720kb is enough!" layout="row" layout-align="center center">
-      <div class="icon icon-facebook ng-scope"></div>
-    </button>
-  </div>
-
-
-  <div class="social-bottom">
-    <button class="md-fab md-raised social-bottom md-button md-default-theme" ng-transclude="" socialshare="" socialshare-provider="twitter" socialshare-text="720kb is enough!" layout="row" layout-align="center center">
-      <div class="icon icon-twitter ng-scope"></div>
-    </button>
-  </div>
-
-  <div class="social-bottom">
-    <button class="md-fab md-raised social-bottom md-button md-default-theme" ng-transclude="" socialshare="" socialshare-provider="pinterest" layout="row" layout-align="center center">
-      <div class="icon icon-pinterest ng-scope"></div>
-    </button>
-  </div>
-
-  <div class="social-bottom">
-    <button class="md-fab md-raised social-bottom md-button md-default-theme" ng-transclude="" socialshare="" socialshare-provider="google+" layout="row" layout-align="center center">
-      <div class="icon icon-google-plus ng-scope"></div>
-    </button>
-  </div>
-</div>
-
-</div>
-</share>
-
-
-
-    <div layout="row" layout-align="center center">
-
-      <button class="md-icon-button md-button md-default-theme" ng-transclude="" ng-click="piuUno('cuori')" layout="row" layout-align="center center" tabindex="0">
-        <div class="icon icon-like ng-scope"></div>
-      </button>
-
-      <h4 class="ownlikes ng-binding">26</h4>
-    </div>
-
-  </div>
-
-
-</div>
-
-
-
-
-
-
-<galleria rif="5550d1e65e9d6fe548e356a5" class="ng-scope ng-isolate-scope">
-
-
-
-<md-grid-list md-cols="7" md-cols-sm="6" md-row-height="1:1" md-gutter="0px" class="ng-isolate-scope" role="list">
-  <!-- ngRepeat: image in galleryImages --><md-grid-tile class="tile ng-scope ng-isolate-scope" ng-repeat="image in galleryImages" md-colspan="2" md-rowspan="3" md-colspan-sm="6" md-rowspan-sm="9" role="listitem"><figure ng-transclude="">
-    <div layout-fill="" style="padding-left:18px;
-padding-right:18px;
-padding-top:27px;
-padding-bottom:27px;" class="ng-scope">
-
-      <div class="tile-image-container" layout-fill="">
-        <img class="tile-image md-whiteframe-z2" ng-src="images/galleria/3e90670ef3d430d2edf9f04e0703d8f1.jpg" src="images/galleria/3e90670ef3d430d2edf9f04e0703d8f1.jpg">
-      </div>
-    </div>
-
-</figure></md-grid-tile><!-- end ngRepeat: image in galleryImages --><md-grid-tile class="tile ng-scope ng-isolate-scope" ng-repeat="image in galleryImages" md-colspan="2" md-rowspan="3" md-colspan-sm="6" md-rowspan-sm="9" role="listitem"><figure ng-transclude="">
-    <div layout-fill="" style="padding-left:18px;
-padding-right:18px;
-padding-top:27px;
-padding-bottom:27px;" class="ng-scope">
-
-      <div class="tile-image-container" layout-fill="">
-        <img class="tile-image md-whiteframe-z2" ng-src="images/galleria/bfd7765546cb77ddf41d02b6c9f55595.jpg" src="images/galleria/bfd7765546cb77ddf41d02b6c9f55595.jpg">
-      </div>
-    </div>
-
-</figure></md-grid-tile><!-- end ngRepeat: image in galleryImages -->
-</md-grid-list>
-</galleria>
-<comment class="article-single ng-scope ng-isolate-scope" rif="5550d1e65e9d6fe548e356a5">
-
-
-
-
-  <form novalidate="" layout="column" layout-align="center start" class="ng-pristine ng-valid">
-  <div class="contact-container" layout-fill="">
-  <h3>Lascia un commento</h3>
-          <md-input-container class="md-default-theme">
-            <label for="input_001">Nome</label>
-            <input ng-model="commento.nome" class="ng-pristine ng-untouched ng-valid md-input" tabindex="0" id="input_001" aria-invalid="false">
-          </md-input-container>
-
-          <md-input-container class="md-default-theme">
-            <label for="input_002">sito</label>
-            <input ng-model="commento.mail" class="ng-pristine ng-untouched ng-valid md-input" tabindex="0" id="input_002" aria-invalid="false">
-          </md-input-container>
-
-          <md-input-container class="md-default-theme">
-            <label for="input_003">testo</label>
-            <input ng-model="commento.testo" class="ng-pristine ng-untouched ng-valid md-input" tabindex="0" id="input_003" aria-invalid="false">
-          </md-input-container>
-          <div flex="">
-    <button class="md-primary md-raised md-button md-default-theme" ng-transclude="" layout-fill="" ng-click="Save()" tabindex="0"><span class="ng-scope">Salva</span></button>
-  </div>
+      <a class="tile-image-container" ui-sref="postSingle({id: post._id})" layout-fill="" href="#!/post/55473b2a5e3f4954105eb82a">
+        <img class="tile-image md-whiteframe-z2" ng-src="images/copertina/364f4d3210611d00bdf311da28afb3ca.jpg" src="images/copertina/364f4d3210611d00bdf311da28afb3ca.jpg">
+        <div class="tile-footer-per">
+          <h3 class="ng-binding">peppo</h3>
+          <div layout="row" layout-align="space-between center">
+            <p class="ng-binding">travel</p>
+            <p class="ng-binding">04/05/2015 </p>
+          </div>
         </div>
+      </a>
+    </div>
 
+  </figure></md-grid-tile><!-- end ngRepeat: post in postList --><md-grid-tile class="tile ng-scope ng-isolate-scope" ng-repeat="post in postList" md-colspan="2" md-rowspan="3" md-colspan-sm="6" md-rowspan-sm="9" role="listitem"><figure ng-transclude="">
+    <div layout-fill="" style="padding-left:18px;padding-right:18px;padding-top:27px;padding-bottom:27px;" class="ng-scope">
 
+      <a class="tile-image-container" ui-sref="postSingle({id: post._id})" layout-fill="" href="#!/post/5550e24e5e9d6fe548e356ab">
+        <img class="tile-image md-whiteframe-z2" ng-src="images/copertina/37c38e0164a8a8b8faff083f3e07183a.jpg" src="images/copertina/37c38e0164a8a8b8faff083f3e07183a.jpg">
+        <div class="tile-footer-per">
+          <h3 class="ng-binding">strh</h3>
+          <div layout="row" layout-align="space-between center">
+            <p class="ng-binding">articolo</p>
+            <p class="ng-binding">02/01/2015 </p>
+          </div>
+        </div>
+      </a>
+    </div>
 
-  </form>
+  </figure></md-grid-tile><!-- end ngRepeat: post in postList --><md-grid-tile class="tile ng-scope ng-isolate-scope" ng-repeat="post in postList" md-colspan="3" md-rowspan="2" md-colspan-sm="6" md-rowspan-sm="4" role="listitem"><figure ng-transclude="">
+    <div layout-fill="" style="padding-left:27px;padding-right:27px;padding-top:18px;padding-bottom:18px;" class="ng-scope">
 
+      <a class="tile-image-container" ui-sref="postSingle({id: post._id})" layout-fill="" href="#!/post/5550d1e65e9d6fe548e356a5">
+        <img class="tile-image md-whiteframe-z2" ng-src="images/copertina/605aef6d2c0144883ec1b0dbf485ed60.jpg" src="images/copertina/605aef6d2c0144883ec1b0dbf485ed60.jpg">
+        <div class="tile-footer-per">
+          <h3 class="ng-binding">rgs11111</h3>
+          <div layout="row" layout-align="space-between center">
+            <p class="ng-binding">shooting</p>
+            <p class="ng-binding">11/05/2014 </p>
+          </div>
+        </div>
+      </a>
+    </div>
 
+  </figure></md-grid-tile><!-- end ngRepeat: post in postList -->
+</md-grid-list>
 
-
-
-
-
-
-<md-list role="list">
-  <!-- ngRepeat: item in commenti --><md-item ng-repeat="item in commenti" class="ng-scope" role="listitem">
-    <md-item-content class=" md-whiteframe-z1">
-      <div class="md-tile-content">
-        <h3 class="ng-binding">bella lee</h3>
-        <h4 class="ng-binding">23/05/2015  alle  13:08</h4>
-        <p class="ng-binding">aergbf
-        </p>
-
-      </div>
-    </md-item-content>
-  </md-item><!-- end ngRepeat: item in commenti --><md-item ng-repeat="item in commenti" class="ng-scope" role="listitem">
-    <md-item-content class=" md-whiteframe-z1">
-      <div class="md-tile-content">
-        <h3 class="ng-binding">sdfb</h3>
-        <h4 class="ng-binding">23/05/2015  alle  12:43</h4>
-        <p class="ng-binding">sdf
-        </p>
-
-      </div>
-    </md-item-content>
-  </md-item><!-- end ngRepeat: item in commenti -->
-</md-list>
-</comment>
+<div flex="" class="ng-scope">
+  <button class="md-raised md-button md-default-theme ng-hide" ng-transclude="" layout-fill="" ng-show="moreAviable" ng-click="more()" tabindex="0" aria-hidden="true"><span class="ng-scope">more</span></button>
+</div>
 </div>
 
-    <sidenav class="section ng-hide" ng-show="show" flex-gt-md="20" aria-hidden="true"><div layout="column" layout-align="center center">
+    <sidenav class="section" ng-show="show" flex-gt-md="20" aria-hidden="false"><div layout="column" layout-align="center center">
 
   <sponsor><div class="sponsordisplay" layout="column" layout-align="center center">
 
@@ -291,7 +176,7 @@ padding-bottom:27px;" class="ng-scope">
 
 <div layout="row" layout-wrap="" layout-margin="" layout-padding="" layout-align="center center">
 
-<!-- ngRepeat: singleTag in tagsList --><div tag-botton="" rif="segra" ng-repeat="singleTag in tagsList" class="botton-tag-container ng-scope ng-isolate-scope"><button class="md-raised md-primary botton-tag md-button md-default-theme" ng-transclude="" style="text-transform: capitalize;" ui-sref="taglist({tagToSearch: rif})" href="#/tags/segra"><span class="ng-binding ng-scope">segra</span></button></div><!-- end ngRepeat: singleTag in tagsList --><div tag-botton="" rif="afae" ng-repeat="singleTag in tagsList" class="botton-tag-container ng-scope ng-isolate-scope"><button class="md-raised md-primary botton-tag md-button md-default-theme" ng-transclude="" style="text-transform: capitalize;" ui-sref="taglist({tagToSearch: rif})" href="#/tags/afae"><span class="ng-binding ng-scope">afae</span></button></div><!-- end ngRepeat: singleTag in tagsList --><div tag-botton="" rif="dgts" ng-repeat="singleTag in tagsList" class="botton-tag-container ng-scope ng-isolate-scope"><button class="md-raised md-primary botton-tag md-button md-default-theme" ng-transclude="" style="text-transform: capitalize;" ui-sref="taglist({tagToSearch: rif})" href="#/tags/dgts"><span class="ng-binding ng-scope">dgts</span></button></div><!-- end ngRepeat: singleTag in tagsList --><div tag-botton="" rif="areggr" ng-repeat="singleTag in tagsList" class="botton-tag-container ng-scope ng-isolate-scope"><button class="md-raised md-primary botton-tag md-button md-default-theme" ng-transclude="" style="text-transform: capitalize;" ui-sref="taglist({tagToSearch: rif})" href="#/tags/areggr"><span class="ng-binding ng-scope">areggr</span></button></div><!-- end ngRepeat: singleTag in tagsList --><div tag-botton="" rif="ysh" ng-repeat="singleTag in tagsList" class="botton-tag-container ng-scope ng-isolate-scope"><button class="md-raised md-primary botton-tag md-button md-default-theme" ng-transclude="" style="text-transform: capitalize;" ui-sref="taglist({tagToSearch: rif})" href="#/tags/ysh"><span class="ng-binding ng-scope">ysh</span></button></div><!-- end ngRepeat: singleTag in tagsList --><div tag-botton="" rif="srthstr" ng-repeat="singleTag in tagsList" class="botton-tag-container ng-scope ng-isolate-scope"><button class="md-raised md-primary botton-tag md-button md-default-theme" ng-transclude="" style="text-transform: capitalize;" ui-sref="taglist({tagToSearch: rif})" href="#/tags/srthstr"><span class="ng-binding ng-scope">srthstr</span></button></div><!-- end ngRepeat: singleTag in tagsList --><div tag-botton="" rif="srgstrhszr" ng-repeat="singleTag in tagsList" class="botton-tag-container ng-scope ng-isolate-scope"><button class="md-raised md-primary botton-tag md-button md-default-theme" ng-transclude="" style="text-transform: capitalize;" ui-sref="taglist({tagToSearch: rif})" href="#/tags/srgstrhszr"><span class="ng-binding ng-scope">srgstrhszr</span></button></div><!-- end ngRepeat: singleTag in tagsList --><div tag-botton="" rif="stgrstrhx" ng-repeat="singleTag in tagsList" class="botton-tag-container ng-scope ng-isolate-scope"><button class="md-raised md-primary botton-tag md-button md-default-theme" ng-transclude="" style="text-transform: capitalize;" ui-sref="taglist({tagToSearch: rif})" href="#/tags/stgrstrhx"><span class="ng-binding ng-scope">stgrstrhx</span></button></div><!-- end ngRepeat: singleTag in tagsList --><div tag-botton="" rif="dyhtstg" ng-repeat="singleTag in tagsList" class="botton-tag-container ng-scope ng-isolate-scope"><button class="md-raised md-primary botton-tag md-button md-default-theme" ng-transclude="" style="text-transform: capitalize;" ui-sref="taglist({tagToSearch: rif})" href="#/tags/dyhtstg"><span class="ng-binding ng-scope">dyhtstg</span></button></div><!-- end ngRepeat: singleTag in tagsList --><div tag-botton="" rif="gsrth" ng-repeat="singleTag in tagsList" class="botton-tag-container ng-scope ng-isolate-scope"><button class="md-raised md-primary botton-tag md-button md-default-theme" ng-transclude="" style="text-transform: capitalize;" ui-sref="taglist({tagToSearch: rif})" href="#/tags/gsrth"><span class="ng-binding ng-scope">gsrth</span></button></div><!-- end ngRepeat: singleTag in tagsList --><div tag-botton="" rif="sgaerga" ng-repeat="singleTag in tagsList" class="botton-tag-container ng-scope ng-isolate-scope"><button class="md-raised md-primary botton-tag md-button md-default-theme" ng-transclude="" style="text-transform: capitalize;" ui-sref="taglist({tagToSearch: rif})" href="#/tags/sgaerga"><span class="ng-binding ng-scope">sgaerga</span></button></div><!-- end ngRepeat: singleTag in tagsList --><div tag-botton="" rif="dtrshgegra" ng-repeat="singleTag in tagsList" class="botton-tag-container ng-scope ng-isolate-scope"><button class="md-raised md-primary botton-tag md-button md-default-theme" ng-transclude="" style="text-transform: capitalize;" ui-sref="taglist({tagToSearch: rif})" href="#/tags/dtrshgegra"><span class="ng-binding ng-scope">dtrshgegra</span></button></div><!-- end ngRepeat: singleTag in tagsList --><div tag-botton="" rif="shtgare" ng-repeat="singleTag in tagsList" class="botton-tag-container ng-scope ng-isolate-scope"><button class="md-raised md-primary botton-tag md-button md-default-theme" ng-transclude="" style="text-transform: capitalize;" ui-sref="taglist({tagToSearch: rif})" href="#/tags/shtgare"><span class="ng-binding ng-scope">shtgare</span></button></div><!-- end ngRepeat: singleTag in tagsList --><div tag-botton="" rif="earaf srge" ng-repeat="singleTag in tagsList" class="botton-tag-container ng-scope ng-isolate-scope"><button class="md-raised md-primary botton-tag md-button md-default-theme" ng-transclude="" style="text-transform: capitalize;" ui-sref="taglist({tagToSearch: rif})" href="#/tags/earaf%20srge"><span class="ng-binding ng-scope">earaf srge</span></button></div><!-- end ngRepeat: singleTag in tagsList -->
+<!-- ngRepeat: singleTag in tagsList --><div tag-botton="" rif="segra" ng-repeat="singleTag in tagsList" class="botton-tag-container ng-scope ng-isolate-scope"><button class="md-raised md-primary botton-tag md-button md-default-theme" ng-transclude="" style="text-transform: capitalize;" ui-sref="taglist({tagToSearch: rif})" href="#!/tags/segra"><span class="ng-binding ng-scope">segra</span></button></div><!-- end ngRepeat: singleTag in tagsList --><div tag-botton="" rif="afae" ng-repeat="singleTag in tagsList" class="botton-tag-container ng-scope ng-isolate-scope"><button class="md-raised md-primary botton-tag md-button md-default-theme" ng-transclude="" style="text-transform: capitalize;" ui-sref="taglist({tagToSearch: rif})" href="#!/tags/afae"><span class="ng-binding ng-scope">afae</span></button></div><!-- end ngRepeat: singleTag in tagsList --><div tag-botton="" rif="dgts" ng-repeat="singleTag in tagsList" class="botton-tag-container ng-scope ng-isolate-scope"><button class="md-raised md-primary botton-tag md-button md-default-theme" ng-transclude="" style="text-transform: capitalize;" ui-sref="taglist({tagToSearch: rif})" href="#!/tags/dgts"><span class="ng-binding ng-scope">dgts</span></button></div><!-- end ngRepeat: singleTag in tagsList --><div tag-botton="" rif="areggr" ng-repeat="singleTag in tagsList" class="botton-tag-container ng-scope ng-isolate-scope"><button class="md-raised md-primary botton-tag md-button md-default-theme" ng-transclude="" style="text-transform: capitalize;" ui-sref="taglist({tagToSearch: rif})" href="#!/tags/areggr"><span class="ng-binding ng-scope">areggr</span></button></div><!-- end ngRepeat: singleTag in tagsList --><div tag-botton="" rif="ysh" ng-repeat="singleTag in tagsList" class="botton-tag-container ng-scope ng-isolate-scope"><button class="md-raised md-primary botton-tag md-button md-default-theme" ng-transclude="" style="text-transform: capitalize;" ui-sref="taglist({tagToSearch: rif})" href="#!/tags/ysh"><span class="ng-binding ng-scope">ysh</span></button></div><!-- end ngRepeat: singleTag in tagsList --><div tag-botton="" rif="srthstr" ng-repeat="singleTag in tagsList" class="botton-tag-container ng-scope ng-isolate-scope"><button class="md-raised md-primary botton-tag md-button md-default-theme" ng-transclude="" style="text-transform: capitalize;" ui-sref="taglist({tagToSearch: rif})" href="#!/tags/srthstr"><span class="ng-binding ng-scope">srthstr</span></button></div><!-- end ngRepeat: singleTag in tagsList --><div tag-botton="" rif="srgstrhszr" ng-repeat="singleTag in tagsList" class="botton-tag-container ng-scope ng-isolate-scope"><button class="md-raised md-primary botton-tag md-button md-default-theme" ng-transclude="" style="text-transform: capitalize;" ui-sref="taglist({tagToSearch: rif})" href="#!/tags/srgstrhszr"><span class="ng-binding ng-scope">srgstrhszr</span></button></div><!-- end ngRepeat: singleTag in tagsList --><div tag-botton="" rif="stgrstrhx" ng-repeat="singleTag in tagsList" class="botton-tag-container ng-scope ng-isolate-scope"><button class="md-raised md-primary botton-tag md-button md-default-theme" ng-transclude="" style="text-transform: capitalize;" ui-sref="taglist({tagToSearch: rif})" href="#!/tags/stgrstrhx"><span class="ng-binding ng-scope">stgrstrhx</span></button></div><!-- end ngRepeat: singleTag in tagsList --><div tag-botton="" rif="dyhtstg" ng-repeat="singleTag in tagsList" class="botton-tag-container ng-scope ng-isolate-scope"><button class="md-raised md-primary botton-tag md-button md-default-theme" ng-transclude="" style="text-transform: capitalize;" ui-sref="taglist({tagToSearch: rif})" href="#!/tags/dyhtstg"><span class="ng-binding ng-scope">dyhtstg</span></button></div><!-- end ngRepeat: singleTag in tagsList --><div tag-botton="" rif="gsrth" ng-repeat="singleTag in tagsList" class="botton-tag-container ng-scope ng-isolate-scope"><button class="md-raised md-primary botton-tag md-button md-default-theme" ng-transclude="" style="text-transform: capitalize;" ui-sref="taglist({tagToSearch: rif})" href="#!/tags/gsrth"><span class="ng-binding ng-scope">gsrth</span></button></div><!-- end ngRepeat: singleTag in tagsList --><div tag-botton="" rif="sgaerga" ng-repeat="singleTag in tagsList" class="botton-tag-container ng-scope ng-isolate-scope"><button class="md-raised md-primary botton-tag md-button md-default-theme" ng-transclude="" style="text-transform: capitalize;" ui-sref="taglist({tagToSearch: rif})" href="#!/tags/sgaerga"><span class="ng-binding ng-scope">sgaerga</span></button></div><!-- end ngRepeat: singleTag in tagsList --><div tag-botton="" rif="dtrshgegra" ng-repeat="singleTag in tagsList" class="botton-tag-container ng-scope ng-isolate-scope"><button class="md-raised md-primary botton-tag md-button md-default-theme" ng-transclude="" style="text-transform: capitalize;" ui-sref="taglist({tagToSearch: rif})" href="#!/tags/dtrshgegra"><span class="ng-binding ng-scope">dtrshgegra</span></button></div><!-- end ngRepeat: singleTag in tagsList --><div tag-botton="" rif="shtgare" ng-repeat="singleTag in tagsList" class="botton-tag-container ng-scope ng-isolate-scope"><button class="md-raised md-primary botton-tag md-button md-default-theme" ng-transclude="" style="text-transform: capitalize;" ui-sref="taglist({tagToSearch: rif})" href="#!/tags/shtgare"><span class="ng-binding ng-scope">shtgare</span></button></div><!-- end ngRepeat: singleTag in tagsList --><div tag-botton="" rif="earaf srge" ng-repeat="singleTag in tagsList" class="botton-tag-container ng-scope ng-isolate-scope"><button class="md-raised md-primary botton-tag md-button md-default-theme" ng-transclude="" style="text-transform: capitalize;" ui-sref="taglist({tagToSearch: rif})" href="#!/tags/earaf%20srge"><span class="ng-binding ng-scope">earaf srge</span></button></div><!-- end ngRepeat: singleTag in tagsList -->
 
 </div>
 </tags>
@@ -329,25 +214,25 @@ padding-bottom:27px;" class="ng-scope">
   </div>
 
   <!-- ngRepeat: hidingMenuItem in hidingMenuItems --><div class="hiding-menu-bc ng-scope" flex="" ng-repeat="hidingMenuItem in hidingMenuItems">
-    <button class="md-raised md-button md-default-theme" ng-transclude="" layout-fill="" ui-sref="aboutme" ng-click="closeNav()" href="#/aboutme" tabindex="0"><span class="ng-binding ng-scope">about me</span></button>
+    <button class="md-raised md-button md-default-theme" ng-transclude="" layout-fill="" ui-sref="home" ng-click="closeNav()" href="#!/" tabindex="0"><span class="ng-binding ng-scope">home</span></button>
   </div><!-- end ngRepeat: hidingMenuItem in hidingMenuItems --><div class="hiding-menu-bc ng-scope" flex="" ng-repeat="hidingMenuItem in hidingMenuItems">
-    <button class="md-raised md-button md-default-theme" ng-transclude="" layout-fill="" ui-sref="contact" ng-click="closeNav()" href="#/contact" tabindex="0"><span class="ng-binding ng-scope">contact</span></button>
+    <button class="md-raised md-button md-default-theme" ng-transclude="" layout-fill="" ui-sref="articoli" ng-click="closeNav()" href="#!/articoli" tabindex="0"><span class="ng-binding ng-scope">articoli</span></button>
   </div><!-- end ngRepeat: hidingMenuItem in hidingMenuItems --><div class="hiding-menu-bc ng-scope" flex="" ng-repeat="hidingMenuItem in hidingMenuItems">
-    <button class="md-raised md-button md-default-theme" ng-transclude="" layout-fill="" ui-sref="press" ng-click="closeNav()" href="#/press" tabindex="0"><span class="ng-binding ng-scope">press</span></button>
+    <button class="md-raised md-button md-default-theme" ng-transclude="" layout-fill="" ui-sref="shooting" ng-click="closeNav()" href="#!/shooting" tabindex="0"><span class="ng-binding ng-scope">shooting</span></button>
   </div><!-- end ngRepeat: hidingMenuItem in hidingMenuItems --><div class="hiding-menu-bc ng-scope" flex="" ng-repeat="hidingMenuItem in hidingMenuItems">
-    <button class="md-raised md-button md-default-theme" ng-transclude="" layout-fill="" ui-sref="home" ng-click="closeNav()" href="#/" tabindex="0"><span class="ng-binding ng-scope">home</span></button>
+    <button class="md-raised md-button md-default-theme" ng-transclude="" layout-fill="" ui-sref="outfit" ng-click="closeNav()" href="#!/outfit" tabindex="0"><span class="ng-binding ng-scope">outfit</span></button>
   </div><!-- end ngRepeat: hidingMenuItem in hidingMenuItems --><div class="hiding-menu-bc ng-scope" flex="" ng-repeat="hidingMenuItem in hidingMenuItems">
-    <button class="md-raised md-button md-default-theme" ng-transclude="" layout-fill="" ui-sref="articoli" ng-click="closeNav()" href="#/articoli" tabindex="0"><span class="ng-binding ng-scope">articoli</span></button>
+    <button class="md-raised md-button md-default-theme" ng-transclude="" layout-fill="" ui-sref="travel" ng-click="closeNav()" href="#!/travel" tabindex="0"><span class="ng-binding ng-scope">travel</span></button>
   </div><!-- end ngRepeat: hidingMenuItem in hidingMenuItems --><div class="hiding-menu-bc ng-scope" flex="" ng-repeat="hidingMenuItem in hidingMenuItems">
-    <button class="md-raised md-button md-default-theme" ng-transclude="" layout-fill="" ui-sref="outfit" ng-click="closeNav()" href="#/outfit" tabindex="0"><span class="ng-binding ng-scope">outfit</span></button>
+    <button class="md-raised md-button md-default-theme" ng-transclude="" layout-fill="" ui-sref="rubrica" ng-click="closeNav()" href="#!/rubrica" tabindex="0"><span class="ng-binding ng-scope">rubrica</span></button>
   </div><!-- end ngRepeat: hidingMenuItem in hidingMenuItems --><div class="hiding-menu-bc ng-scope" flex="" ng-repeat="hidingMenuItem in hidingMenuItems">
-    <button class="md-raised md-button md-default-theme" ng-transclude="" layout-fill="" ui-sref="travel" ng-click="closeNav()" href="#/travel" tabindex="0"><span class="ng-binding ng-scope">travel</span></button>
+    <button class="md-raised md-button md-default-theme" ng-transclude="" layout-fill="" ui-sref="galleria" ng-click="closeNav()" href="#!/galleria" tabindex="0"><span class="ng-binding ng-scope">galleria</span></button>
   </div><!-- end ngRepeat: hidingMenuItem in hidingMenuItems --><div class="hiding-menu-bc ng-scope" flex="" ng-repeat="hidingMenuItem in hidingMenuItems">
-    <button class="md-raised md-button md-default-theme" ng-transclude="" layout-fill="" ui-sref="shooting" ng-click="closeNav()" href="#/shooting" tabindex="0"><span class="ng-binding ng-scope">shooting</span></button>
+    <button class="md-raised md-button md-default-theme" ng-transclude="" layout-fill="" ui-sref="aboutme" ng-click="closeNav()" href="#!/aboutme" tabindex="0"><span class="ng-binding ng-scope">about me</span></button>
   </div><!-- end ngRepeat: hidingMenuItem in hidingMenuItems --><div class="hiding-menu-bc ng-scope" flex="" ng-repeat="hidingMenuItem in hidingMenuItems">
-    <button class="md-raised md-button md-default-theme" ng-transclude="" layout-fill="" ui-sref="rubrica" ng-click="closeNav()" href="#/rubrica" tabindex="0"><span class="ng-binding ng-scope">rubrica</span></button>
+    <button class="md-raised md-button md-default-theme" ng-transclude="" layout-fill="" ui-sref="contact" ng-click="closeNav()" href="#!/contact" tabindex="0"><span class="ng-binding ng-scope">contact</span></button>
   </div><!-- end ngRepeat: hidingMenuItem in hidingMenuItems --><div class="hiding-menu-bc ng-scope" flex="" ng-repeat="hidingMenuItem in hidingMenuItems">
-    <button class="md-raised md-button md-default-theme" ng-transclude="" layout-fill="" ui-sref="galleria" ng-click="closeNav()" href="#/galleria" tabindex="0"><span class="ng-binding ng-scope">galleria</span></button>
+    <button class="md-raised md-button md-default-theme" ng-transclude="" layout-fill="" ui-sref="press" ng-click="closeNav()" href="#!/press" tabindex="0"><span class="ng-binding ng-scope">press</span></button>
   </div><!-- end ngRepeat: hidingMenuItem in hidingMenuItems -->
 
 </div>

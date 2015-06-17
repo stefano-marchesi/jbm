@@ -9,7 +9,7 @@ var mongoose = require('mongoose');
 var gm = require('gm');
 var cors = require('cors');
 var compression = require('compression');
-// var htmlSnapshots = require('html-snapshots');
+ var htmlSnapshots = require('html-snapshots');
 var sitemap = require('./sitemap.js');
 
 
@@ -19,6 +19,30 @@ var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
   console.log('connesso a mongo');
+});
+
+app.use(function(req, res, next) {
+  var fragment = req.query._escaped_fragment_;
+
+  if (!fragment) return next();
+
+  if (fragment === "" || fragment === "/")
+    fragment = "/index.html";
+
+  if (fragment.charAt(0) !== "/")
+    fragment = '/' + fragment;
+
+  if (fragment.indexOf('/index.html') == -1)
+    fragment += "/index.html";
+
+
+  try {
+    var file = "public/snapshots/#!" + fragment;
+    console.log(file);
+    res.sendfile(file);
+  } catch (err) {
+    res.send(404);
+  }
 });
 
 var serve = serveStatic('./public');
@@ -33,7 +57,6 @@ app.use(bodyParser.urlencoded({
 
 sitemap.update();
 
-/*
 var result = htmlSnapshots.run({
   input: "sitemap",
   source: "./public/sitemap.xml",
@@ -41,7 +64,8 @@ var result = htmlSnapshots.run({
   outputDirClean: true
 });
 
-*/
+
+
 
 // Routes
 var cache = require('./routes/cache/route.js');
